@@ -7,6 +7,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.heading a{
+    text-decoration: none;
+}
 .heading h1{
     cursor: pointer;
     /* margin-top: 20px; */
