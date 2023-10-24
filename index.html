@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="heading">
+            <h1>Rapid Typing Test</h1>
+            <div class="time">
+                <img src="images-removebg-preview.png" alt="">
+                <p id="counter">0 seconds</p></div>
+            
+    </div>
+    <div class="text">
+        <p id="paragraph">This is the sample text, reset to get the actual text.</p>
+       
+    </div>
+    <div class="usertext">
+        <textarea name="" id="textarea" cols="50" rows="3" placeholder="Start Typing the above sentence here...!!!" onclick="startCounter()"></textarea>
+    </div>
+    <div class="load">
+        <div class="reset">
+            <button onclick="appendRandomString()"> <i class='bx bx-reset'></i></button>
+             <!-- <p>Reload</p> -->
+        </div>
+        <div class="compare">
+            <button onclick="compareStrings()" >Compare</button>
+        </div>
+    </div>
+    <div class="ans">
+        <p id="result"> </p>
+    </div>
+    <footer class="footer">
+        <p class="footertext">Type Your Way to Victory!</p>
+        <p>Copyright &copy; 2023 by Sudeep | All Rights Reserved.</p>
+        
+    </footer>
+   
+    
+        
+    
+    
+    <script src="speedcheckjs.js"></script>
+</body>
+</html>
