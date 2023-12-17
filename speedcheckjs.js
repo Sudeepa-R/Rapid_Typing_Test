@@ -94,6 +94,8 @@ function compareStrings() {
     const paragraphText = document.getElementById('paragraph').textContent;
     var userInput = document.getElementById('textarea').value;
     const resultElement = document.getElementById('result');
+    const accuracyElement=document.getElementById('accuracy');
+    accuracyElement.textContent="";
 
     if (paragraphText === userInput) {
 
