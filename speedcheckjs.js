@@ -83,7 +83,7 @@ function accuracyy(){
     var a=paragraphText.length;
     var b=userInput.length;
     let re=Math.ceil((ac/a)*100);
-    accuracyElement.textContent = 'Accuuracy :'+re+'%';
+    accuracyElement.textContent = 'Accuuracy : '+re+'%';
     document.getElementById('accuracy').style.color="rgb(193, 193, 13)";
 
 }
