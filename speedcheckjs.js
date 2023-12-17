@@ -44,6 +44,8 @@ const strings =[
    
     const resultElement = document.getElementById('result');
     resultElement.textContent = "";
+    const accuracyElement=document.getElementById('accuracy');
+    accuracyElement.textContent="";
     // var textareea=document.getElementById('textarea');
 
     // textareea.value= " ";
@@ -69,6 +71,24 @@ function clearTextarea() {
             // Set the placeholder attribute to your desired text
             textarea.placeholder = "Start Typing the above sentence here...!!!";
         }
+//accuracy
+function accuracyy(){
+    const paragraphText = document.getElementById('paragraph').textContent;
+    var userInput = document.getElementById('textarea').value;
+    const accuracyElement = document.getElementById('accuracy');
+    ac=0;
+    for(let i=0;i<userInput.length;i++){
+        if (paragraphText[i]===userInput[i]){
+            ac=ac+1;
+        }
+    }
+    var a=paragraphText.length;
+    var b=userInput.length;
+    let re=Math.ceil((ac/a)*100);
+    accuracyElement.textContent = 'Accuuracy :'+re+'%';
+    document.getElementById('accuracy').style.color="rgb(193, 193, 13)";
+
+}
 // comparing the values 
 function compareStrings() {
     const paragraphText = document.getElementById('paragraph').textContent;
@@ -80,9 +100,11 @@ function compareStrings() {
         resultElement.textContent = "Match! The strings are the same.";
         document.getElementById('result').style.color="rgb(23, 170, 23)";
         stopCounter();
+        accuracyy();
     } else {
         resultElement.textContent = "No match. The strings you typed contains error.";
         document.getElementById('result').style.color="red";
+        accuracyy();
     }
 }
 // timing 
