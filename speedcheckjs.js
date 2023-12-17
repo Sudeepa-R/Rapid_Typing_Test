@@ -1,8 +1,6 @@
 const strings =[
     "The quick brown fox jumps over the lazy dog, demonstrating speed and agility in seconds.",
     "Students study diligently, striving for excellence in their academic pursuits and future careers.",
-    "Mathematics, science, and literature provide diverse challenges, fostering critical thinking and creativity.",
-    "Educational institutions promote knowledge, personal growth, and social interactions among young scholars.",
     "In a digital age, information flows rapidly, requiring students to adapt and process data efficiently.",
     "History's lessons guide us forward, shaping our understanding of society and culture.",
     "Curiosity fuels exploration, from the depths of the ocean to the far reaches of space.",
